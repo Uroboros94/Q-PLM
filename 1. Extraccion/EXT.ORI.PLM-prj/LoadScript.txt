@@ -19,7 +19,7 @@ SET CollationLocale='es-CO';
 
 ///$tab Conexión Interfaz
 /* Conexión a INTERFAZPLM. */
-OLEDB CONNECT TO [Provider=SQLOLEDB.1;Persist Security Info=True;User ID=qlikview;Initial Catalog=INTERFAZPLM;Data Source=QUEST-SQL1;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=QUEST-QLINK;Use Encryption for Data=False;Tag with column collation when possible=False] (XPassword is HWVLUYRNJbaICSIGQJMKTRC);
+OLEDB CONNECT TO [Provider=SQLOLEDB.1;Persist Security Info=True;User ID=qlikview;Initial Catalog=INTERFAZPLM;Data Source=10.75.28.41;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=QUEST-QLINK;Use Encryption for Data=False;Tag with column collation when possible=False] (XPassword is HWVLUYRNJbaICSIGQJMKTRC);
 ///$tab Dim
 /* Presupuestos de las colecciones */
 $(Must_Include=qvs.plm\matrizppto.qvs);
