@@ -14,7 +14,7 @@ Maestro_Ppto:
 	    Observacion,
 	    Marca
 	FROM
-	[..\Fuentes\PRESUPUESTO.xlsx]
+	[..\Fuentes\Presupuesto PLM\PRESUPUESTO.xlsx]
 	(ooxml, embedded labels, table is Maestro);
 STORE Maestro_Ppto INTO [..\QVD\PLM\Maestro_Ppto.QVD](qvd);
 
@@ -117,7 +117,7 @@ FOR counter = 1 to $(Marca) step 1
 			if('$(vMarca)'='QUEST','UE',
 				if('$(vMarca)'='QURUBA','QU','OTRA'))		as CodMarca
 			FROM
-			[..\Fuentes\PRESUPUESTO.xlsx]
+			[..\Fuentes\Presupuesto PLM\PRESUPUESTO.xlsx]
 			(ooxml, embedded labels, header is 2 lines, table is [$(vTabName)]);
 NEXT;
 
